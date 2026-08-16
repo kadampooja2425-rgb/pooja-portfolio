@@ -1,0 +1,209 @@
+/*=========================================
+            NAVBAR
+=========================================*/
+
+.navbar{
+
+    position:sticky;
+
+    top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:18px 30px;
+
+    margin-bottom:40px;
+
+    background:rgba(30,41,59,.85);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    z-index:100;
+
+}
+
+/*=========================================
+            LEFT SIDE
+=========================================*/
+
+.navbar-left{
+
+    flex:1;
+
+}
+
+/*=========================================
+            SEARCH BOX
+=========================================*/
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    padding:12px 18px;
+
+    max-width:420px;
+
+}
+
+.search-box i{
+
+    color:var(--text-light);
+
+    font-size:16px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    color:var(--white);
+
+    font-size:15px;
+
+}
+
+.search-box input::placeholder{
+
+    color:var(--text-light);
+
+}
+
+/*=========================================
+            RIGHT SIDE
+=========================================*/
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/*=========================================
+            ICON BUTTON
+=========================================*/
+
+.icon-btn{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#111827;
+
+    color:var(--white);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.icon-btn:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================
+            PROFILE
+=========================================*/
+
+.profile-mini{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:8px 15px;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+}
+
+.profile-mini img{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid var(--primary);
+
+}
+
+.profile-mini h4{
+
+    font-size:15px;
+
+    margin-bottom:2px;
+
+}
+
+.profile-mini small{
+
+    color:var(--success);
+
+    font-size:13px;
+
+}
+
+/*=========================================
+            HOVER EFFECT
+=========================================*/
+
+.profile-mini:hover{
+
+    border-color:var(--primary);
+
+    transition:var(--transition);
+
+}

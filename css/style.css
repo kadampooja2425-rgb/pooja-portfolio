@@ -1,0 +1,342 @@
+/*=========================================
+            GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+            CSS VARIABLES
+=========================================*/
+
+:root{
+
+    /* Colors */
+
+    --bg-color:#0f172a;
+    --sidebar-color:#111827;
+    --card-color:#1e293b;
+    --primary:#6366f1;
+    --secondary:#06b6d4;
+
+    --white:#ffffff;
+    --text:#e2e8f0;
+    --text-light:#94a3b8;
+
+    --success:#22c55e;
+    --warning:#f59e0b;
+    --danger:#ef4444;
+
+    --border:rgba(255,255,255,.08);
+
+    /* Radius */
+
+    --radius:20px;
+
+    /* Shadow */
+
+    --shadow:0 15px 35px rgba(0,0,0,.25);
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+}
+
+/*=========================================
+            RESET
+=========================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    scroll-behavior:smooth;
+
+}
+
+/*=========================================
+            BODY
+=========================================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg-color);
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+}
+
+/*=========================================
+            LINKS
+=========================================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/*=========================================
+            LIST
+=========================================*/
+
+ul{
+
+    list-style:none;
+
+}
+
+/*=========================================
+            IMAGES
+=========================================*/
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+/*=========================================
+            BUTTON
+=========================================*/
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+            INPUT
+=========================================*/
+
+input{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/*=========================================
+            MAIN LAYOUT
+=========================================*/
+
+.main-content{
+
+    margin-left:290px;
+
+    min-height:100vh;
+
+    padding:30px;
+
+}
+
+/*=========================================
+            SECTION
+=========================================*/
+
+section{
+
+    padding:90px 0;
+
+}
+
+/*=========================================
+            SECTION TITLE
+=========================================*/
+
+.section-title{
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+.section-title p{
+
+    margin-top:10px;
+
+    color:var(--text-light);
+
+}
+
+/*=========================================
+            CARD
+=========================================*/
+
+.card{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/*=========================================
+            PRIMARY BUTTON
+=========================================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#4f46e5;
+
+}
+
+/*=========================================
+            SECONDARY BUTTON
+=========================================*/
+
+.btn-outline{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*=========================================
+            CUSTOM SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#4f46e5;
+
+}
+
+/*=========================================
+            SELECTION
+=========================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*=========================================
+            LIGHT MODE
+=========================================*/
+
+.light-mode{
+
+    --bg-color:#f8fafc;
+
+    --sidebar-color:#ffffff;
+
+    --card-color:#ffffff;
+
+    --text:#111827;
+
+    --text-light:#475569;
+
+    --white:#111827;
+
+    --border:rgba(0,0,0,.08);
+
+    background:#f8fafc;
+
+    color:#111827;
+
+}
